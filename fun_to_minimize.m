@@ -5,7 +5,7 @@ Zt = 20; eps = 1e-6;
 
 % Choose r_max depending on X
 N = 1000; r_max = maximum_radius(X); dr = r_max/N;
-integrand = @(r) r^2*rho(r,X);
+integrand = @(r) r.^2.*rho(r,X);
 R = 0:dr:r_max;
 s = sum(integrand(R))*dr;
 
