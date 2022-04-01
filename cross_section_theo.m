@@ -13,7 +13,7 @@ q2 = 4*p^2*sind(theta/2)^2;
 
 beta = v/c;
 
-mott = Zp^2*Zt^2*alpha^2*c^2*(1-beta^2*sin(theta/2)^2)/(4*beta^4*E^2*sin(theta/2)^4);
+mott = Zp^2*Zt^2*alpha^2*c^2*(1-beta^2*sind(theta/2)^2)/(4*beta^4*E^2*sind(theta/2)^4);
 res = mott*abs(F(q2,X))^2;
 end
 
