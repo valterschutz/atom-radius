@@ -2,7 +2,7 @@ clearvars, clc
 Z = 20;
 e = 1.602176634e-19;
 
-% Radius is ~ 1 fm. This implies... 
+% From lecture 5, rho0 = 0.17 mol/fm^2, a=1.2sqrt(A) fm, b=0.54 fm
 x0 = [0.1*e*10^45,4e-15,6e-16];
 
 options = optimoptions("fminunc","MaxIterations",1000,"StepTolerance",1e-20,"OptimalityTolerance",1e-20);
