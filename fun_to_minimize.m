@@ -9,6 +9,6 @@ integrand = @(r) r.^2.*rho(r,X);
 R = 0:dr:r_max;
 s = sum(integrand(R))*dr;
 
-res = chi2(X) + ((Zt - 4*pi/e*s)/eps)^2;
+res = chi2(X) + ((Zt - (4*pi/e)*s)/eps)^2;
 end
 
