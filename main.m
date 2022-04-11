@@ -7,7 +7,7 @@ sigma = readvars("sigma_data.txt");
 error = readvars("error_data.txt");
 
 % Radius is ~ 1 fm. This implies... 
-x0 = [0.1*e,4,0.1];
+x0 = [0.1*e,4,0.6];
 options = optimset('PlotFcns',@optimplotfval);
 [Xhat,fval,exitflag,output]  = fminsearch(@(X) fun_to_minimize(X),x0, options);
 %output
