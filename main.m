@@ -2,15 +2,14 @@ clearvars, clc
 Z = 20;
 e = 1.602176634e-19;
 
-theta = readvars("theta_data.txt");
-sigma = readvars("sigma_data.txt");
-error = readvars("error_data.txt");
+% From lecture 5, rho0 = 0.17 mol/fm^2, a=1.2sqrt(A) fm, b=0.54 fm
+x0 = [0.1*e*10^45,4e-15,6e-16];
 
 % Radius is ~ 1 fm. This implies... 
 x0 = [0.1*e,4,0.6];
 options = optimset('PlotFcns',@optimplotfval);
 [Xhat,fval,exitflag,output]  = fminsearch(@(X) fun_to_minimize(X),x0, options);
-%output
+
 fprintf("rho_0=%.2e, a=%.2e, b=%.2e\n",Xhat(1), Xhat(2), Xhat(3))
 
 N = 100000; r_max = maximum_radius(Xhat); dr = r_max/N;
