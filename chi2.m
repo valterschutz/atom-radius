@@ -4,9 +4,7 @@ function res = chi2(X)
 % Experimental values for comparison
 theta = readvars("theta_data.txt");
 cross_section_exp = readvars("sigma_data.txt");
-cross_section_exp = cross_section_exp * 10^(-31);
 error = readvars("error_data.txt");
-error = error * 10^(-31);
 
 res = 0;
 for k=1:length(theta)
