@@ -5,6 +5,6 @@ function res = maximum_radius(X)
 % Should not depend on rho_0, only a & b. We want (r-a)/b >> 1.
 a = X(2); b = X(3);
 
-res = 10*b+a;  % Seems ok, check with Desmos
+res = 100*b+a;  % Seems ok, check with Desmos
 end
 
