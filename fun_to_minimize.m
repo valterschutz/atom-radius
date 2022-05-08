@@ -1,7 +1,7 @@
 function res = fun_to_minimize(X)
 %FUN_TO_MINIMIZE chi2 but with constraint
 e = 1.602176634e-19;
-Zt = 20; eps = 1e-10;
+Zt = 20; eps = 1e-6;
 
 % Choose r_max depending on X
 N = 1000; r_max = maximum_radius(X); dr = r_max/N;

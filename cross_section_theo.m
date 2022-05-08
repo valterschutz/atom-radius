@@ -7,6 +7,7 @@ m_e = 9.109381881e-31;
 c = 299792458*10^15; e = 1.602176634*10^-19; alpha = 0.0072973525693; hbar = 1.054571817e-34*10^30;
 E = 250*10^6*e*10^30;  % Energy of incoming electrons
 
+% Relativistic calculations for momentum and speed
 p = sqrt(E^2-m_e^2*c^4)/c;
 v = p/sqrt(m_e^2+p^2/c^2);
 q2 = 4*p^2*sind(theta/2).^2;
